@@ -1,0 +1,26 @@
+{
+  "name": "choo-typescript-rollup",
+  "description": "",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Jose Quintana",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "typescript": "^2.9.1"
+  },
+  "scripts": {
+    "build": "npm run lint && node config/build.js",
+    "clean": "rm -rf dist",
+    "lint": "tslint --format stylish --project tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^10.3.0",
+    "rollup": "^0.59.4",
+    "rollup-plugin-prepack-up": "^1.0.0",
+    "rollup-plugin-typescript2": "^0.14.0",
+    "rollup-plugin-uglify": "^4.0.0",
+    "tslint": "^5.10.0",
+    "tslint-config-standard-plus": "^1.0.0"
+  }
+}
